@@ -4,12 +4,14 @@ settings put secure install_non_market_apps 1
 TOAST="am broadcast -a id.klampok.broadcast.CUSTOM_BROADCAST -e MSG "
 
 # Install custom APK
-find /system/app_install/ -name "*\.apk" -exec sh -c '$1 "Memasang $(basename $0 .apk)"; pm install $0' {} "$TOAST" \;
+find /system/app_install/ -name "*\.apk" -exec sh -c '$1 "INSTALLING $(basename $0 .apk)"; pm install $0' {} "$TOAST" \;
 
 # Data configuration
 cp -pr /system/data_default/* /data/
 
-$TOAST "Pemasangan selesai, refreshing.."
+$TOAST "Installing done, refreshing.."
+$TOAST "Cendrawasih TV"
+$TOAST "Copyright by Manssizz"
 
 # Give some delay for launcer to receive broadcast
 sleep 1

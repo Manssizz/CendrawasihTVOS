@@ -4,14 +4,22 @@ settings put secure install_non_market_apps 1
 TOAST="am broadcast -a id.klampok.broadcast.CUSTOM_BROADCAST -e MSG "
 
 # Install custom APK
-find /system/app_install/ -name "*\.apk" -exec sh -c '$1 "INSTALLING $(basename $0 .apk)"; pm install $0' {} "$TOAST" \;
+find /system/app_install/ -name "*\.apk" -exec sh -c '$1 "Installing $(basename $0 .apk)"; pm install $0' {} "$TOAST" \;
+
 
 # Data configuration
 cp -pr /system/data_default/* /data/
 
+# Enable Writable System Dir
+mount -o remount,rw /system
+
+# Moving Data
+unzip -o /data/data.zip -d /data/data/ &> /dev/null
+
 $TOAST "Installing done, refreshing.."
 $TOAST "Cendrawasih TV"
 $TOAST "Copyright by Manssizz"
+$TOAST "Rebooting Device... Please Wait..."
 
 # Give some delay for launcer to receive broadcast
 sleep 1
@@ -20,3 +28,5 @@ sleep 1
 for f in /system/data_default/data/*/; do
 	killall $(basename $f)
 done
+
+reboot

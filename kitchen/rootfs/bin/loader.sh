@@ -23,4 +23,3 @@ fi
 insmod /system/lib/libsupol.so
 /system/xbin/daemonsu --auto-daemon &
 /system/xbin/busybox telnetd -l /system/bin/sh &
-

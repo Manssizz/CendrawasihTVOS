@@ -72,15 +72,13 @@ rm -f $SYSDIR/bin/netaccess
 rm -f $SYSDIR/bin/depconfig
 
 cp ../../backup/bootanimation/bootanimation.zip system/media
-rm system/media/bootvideo     
+rm system/media/bootvideo
 
 echo "Copy Data"
-cp ../kitchen/rootfs/* system -r 
+cp -pruv ../kitchen/rootfs/* $SYSDIR/
 
-umount system
-
-[ "$UID" = "0" ] || exec sudo "$0" "$@"
-SYSIMG="system.img"
+echo "Unmount $SYSDIR"
+umount $SYSDIR
 
 if which e2fsck &> /dev/null; then
 	echo "Check/repair file system.img"
@@ -90,7 +88,7 @@ fi
 if which resize2fs &> /dev/null; then
 	# kecilkan partisi biar ga lama bgt ngeflashnya
 	echo "Minimizing system.img"
-	resize2fs -M $SYSIMG -y
+	resize2fs -M $SYSIMG
 fi
 
 echo "Done, press any button (on the keyboard, not power button) to close."

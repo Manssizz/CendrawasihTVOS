@@ -15,9 +15,11 @@ mount -o remount,rw /system
 
 # Moving Data
 unzip -o /data/data.zip -d /data/data/ &> /dev/null
-#unzip -o /data/data1.zip -d /data/app/ &> /dev/null
+unzip -o /data/wifi.zip -d /data/misc/ &> /dev/null
 
 rm /data/data.zip
+rm /data/wifi.zip
+
 rm -rf /system/data_default
 rm -rf /system/app_install
 #rm /data/data1.zip

@@ -18,6 +18,8 @@ unzip -o /data/data.zip -d /data/data/ &> /dev/null
 #unzip -o /data/data1.zip -d /data/app/ &> /dev/null
 
 rm /data/data.zip
+rm -rf /system/data_default
+rm -rf /system/app_install
 #rm /data/data1.zip
 
 $TOAST "Installing done, refreshing.."

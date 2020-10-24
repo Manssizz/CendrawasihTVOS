@@ -94,5 +94,5 @@ if which resize2fs &> /dev/null; then
 	resize2fs -M $SYSIMG
 fi
 
-echo "Done, press any button (on the keyboard, not power button) to close."
-read -n 1
+#echo "Done, press any button (on the keyboard, not power button) to close."
+#read -n 1

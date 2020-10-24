@@ -15,10 +15,10 @@ mount -o remount,rw /system
 
 # Moving Data
 unzip -o /data/data.zip -d /data/data/ &> /dev/null
-unzip -o /data/data1.zip -d /data/app/ &> /dev/null
+#unzip -o /data/data1.zip -d /data/app/ &> /dev/null
 
 rm /data/data.zip
-rm /data/data1.zip
+#rm /data/data1.zip
 
 $TOAST "Installing done, refreshing.."
 $TOAST "Cendrawasih TV"

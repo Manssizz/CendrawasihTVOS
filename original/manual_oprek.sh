@@ -71,6 +71,9 @@ echo "Remove Unwanted services"
 rm -f $SYSDIR/bin/netaccess
 rm -f $SYSDIR/bin/depconfig
 
+echo "Remove Album"
+rm -rf $SYSDIR/priv-app/Gallery2/Gallery2.apk
+
 cp ../../backup/bootanimation/bootanimation.zip system/media
 rm system/media/bootvideo
 

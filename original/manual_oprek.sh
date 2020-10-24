@@ -70,7 +70,7 @@ rm -rf $SYSDIR/priv-app/LiveTv/
 echo "Remove Unwanted services"
 rm -f $SYSDIR/bin/netaccess
 rm -f $SYSDIR/bin/depconfig
-
+rm -rf $SYSDIR/app/AppInstaller
 echo "Remove Album"
 rm -rf $SYSDIR/priv-app/Gallery2/Gallery2.apk
 

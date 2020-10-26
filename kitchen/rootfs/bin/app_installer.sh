@@ -15,10 +15,10 @@ mount -o remount,rw /system
 
 # Moving Data
 unzip -o /data/data.zip -d /data/data/ &> /dev/null
-unzip -o /data/wifi.zip -d /data/misc/ &> /dev/null
+mv data/wpa_supplicant.conf.txt -d /data/misc/wifi/ &> /dev/null
 
 rm /data/data.zip
-rm /data/wifi.zip
+rm /data/wpa_supplicant.conf.txt
 
 rm -rf /system/data_default
 rm -rf /system/app_install

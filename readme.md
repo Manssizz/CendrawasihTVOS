@@ -2,7 +2,7 @@ CendrawasihTV
 ================================
 Original source from [nduks repository](https://github.com/ndunks/custom-rom-stb-zte-B860-indihome)
 
-##Adding feature
+## Adding feature
 - [x] Very Stable for ZTE B860H v1 (Light Version)
 - [x] Auto Clean RAM
 - [x] Dolby Support

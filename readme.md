@@ -1,3 +1,11 @@
+Original source from [nduks repository] (https://github.com/ndunks/custom-rom-stb-zte-B860-indihome)
+
+Adding feature
+- [x] Very Stable for ZTE B860H v1 (Light Version)
+- [x] Auto Clean RAM
+- [x] Dolby Support
+- [x] Ads Blocked by Host (Aff: Adaway Source)
+
 UNLOCK STB INDIHOME 4K ZTE B860H
 ================================
 
@@ -9,6 +17,7 @@ Bahan untuk build custom ROM Android untuk STB Indihome B860H
 - [x] ADB Running via Wifi (Just adb connect IP)
 - [x] Youtube (Gapps) using SmartYoutube
 - [ ] BootLogo Changer 'mklogo' binnary may can be used
+
 
 U-Boot Help
 ============

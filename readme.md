@@ -1,10 +1,12 @@
-Original source from [nduks repository] (https://github.com/ndunks/custom-rom-stb-zte-B860-indihome)
+CendrawasihTV
+================================
+Original source from [nduks repository](https://github.com/ndunks/custom-rom-stb-zte-B860-indihome)
 
-Adding feature
+##Adding feature
 - [x] Very Stable for ZTE B860H v1 (Light Version)
 - [x] Auto Clean RAM
 - [x] Dolby Support
-- [x] Ads Blocked by Host (Aff: Adaway Source)
+- [x] Ads Blocked by Host (Adaway Source)
 
 UNLOCK STB INDIHOME 4K ZTE B860H
 ================================

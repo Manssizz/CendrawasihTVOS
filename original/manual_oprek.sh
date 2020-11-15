@@ -2,11 +2,17 @@
 SYSDIR="system"
 SYSIMG="system.img"
 
+#Extract system image
+7z x system.7z.001
+echo done
+
+#Extract and give permission for system dir
 chmod 777 $SYSIMG
 echo "Mounting system.img to $SYSDIR"
 [ -d $SYSDIR ] || mkdir $SYSDIR
 mount -o loop,noatime,rw,sync $SYSIMG $SYSDIR
 
+#Modding Script
 echo "Remove 3rd Party Apps (indihome)"
 rm -rf $SYSDIR/preinstall
 
@@ -65,7 +71,7 @@ rm -rf $SYSDIR/priv-app/LiveTv/
 
 #Uncomment if you want use hardware keyboard only (no softkeyboard)
 #rm -rf $SYSDIR/app/LatinIME
-#rm -rf $SYSDIR/app/OpenWnn 
+#rm -rf $SYSDIR/app/OpenWnn
 
 echo "Remove Unwanted services"
 rm -f $SYSDIR/bin/netaccess
@@ -77,8 +83,12 @@ rm -rf $SYSDIR/priv-app/Gallery2/Gallery2.apk
 cp ../../backup/bootanimation/bootanimation.zip system/media
 rm system/media/bootvideo
 
+echo "Extract Font Mod"
+unzip -o ../kitchen/rootfs/fonts.zip $SYSDIR/
+
 echo "Copy Data"
 cp -pruv ../kitchen/rootfs/* $SYSDIR/
+rm $SYSDIR/fonts.zip
 
 echo "Unmount $SYSDIR"
 umount $SYSDIR
@@ -94,5 +104,7 @@ if which resize2fs &> /dev/null; then
 	resize2fs -M $SYSIMG
 fi
 
+echo "Move new system file to release folder"
+mv system.img ../release/
 #echo "Done, press any button (on the keyboard, not power button) to close."
 #read -n 1

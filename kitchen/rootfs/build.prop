@@ -14,7 +14,7 @@ ro.build.date=Sat Nov 14 15:30:48 GMT+7 2020
 ro.build.date.utc=1506659568
 ro.build.type=userdebug
 ro.build.user=Manssizz
-ro.build.host=server
+ro.build.host=Cendrawasih-Project
 ro.build.tags=test-keys
 ro.build.flavor=kvim_userdebug
 ro.product.model=CendrawasihTV
@@ -285,7 +285,7 @@ ubootenv.var.screenmode=
 #
 # ADDITIONAL_BUILD_PROPERTIES
 #
-ro.config.wallpaper=/system/etc/wallpaper.jpg
+ro.config.wallpaper=/system/etc/default_wallpaper.png
 ro.com.android.dateformat=MM-dd-yyyy
 ro.config.ringtone=Ring_Synth_04.ogg
 ro.config.notification_sound=pixiedust.ogg

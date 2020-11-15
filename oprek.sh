@@ -1,8 +1,8 @@
 #!/bin/bash
 [ "$UID" = "0" ] || exec sudo "$0" "$@"
 
-SYSDIR="kitchen/system"
-SYSIMG="kitchen/system.img"
+SYSDIR="mod/system"
+SYSIMG="mod/system.img"
 
 cp -v original/system.img $SYSIMG || exit 1
 chmod 777 $SYSIMG
@@ -70,7 +70,7 @@ rm -rf $SYSDIR/priv-app/LiveTv/
 
 #Uncomment if you want use hardware keyboard only (no softkeyboard)
 #rm -rf $SYSDIR/app/LatinIME
-#rm -rf $SYSDIR/app/OpenWnn 
+#rm -rf $SYSDIR/app/OpenWnn
 
 echo "Remove Unwanted services"
 rm -f $SYSDIR/bin/netaccess

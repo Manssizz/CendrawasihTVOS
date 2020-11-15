@@ -3,11 +3,11 @@ UPDATEBIN="./tools/linux/update"
 $UPDATEBIN scan | grep 'No ' && exit 1
 
 echo "FLASHING"
-[ -e kitchen/boot.img ] && $UPDATEBIN partition boot kitchen/boot.img
-[ -e kitchen/conf.img ] && $UPDATEBIN partition conf kitchen/conf.img
-[ -e kitchen/logo.img ] && $UPDATEBIN partition logo kitchen/logo.img
-[ -e kitchen/env.img ] && $UPDATEBIN partition env kitchen/env.img
-$UPDATEBIN partition system kitchen/system.img
+[ -e release/boot.img ] && $UPDATEBIN partition boot release/boot.img
+[ -e release/conf.img ] && $UPDATEBIN partition conf release/conf.img
+#[ -e release/logo.img ] && $UPDATEBIN partition logo kitchen/logo.img
+[ -e release/env.img ] && $UPDATEBIN partition env release/env.img
+$UPDATEBIN partition system mod/system.img
 $UPDATEBIN bulkcmd "amlmmc erase data"
 $UPDATEBIN bulkcmd "amlmmc erase cache"
 $UPDATEBIN bulkcmd "setenv hdmimode 720p60hz"

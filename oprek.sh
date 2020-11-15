@@ -12,6 +12,7 @@ echo "Mounting system.img to $SYSDIR"
 [ -d $SYSDIR ] || mkdir $SYSDIR
 mount -o loop,noatime,rw,sync $SYSIMG $SYSDIR
 
+#Modding Script
 echo "Remove 3rd Party Apps (indihome)"
 rm -rf $SYSDIR/preinstall
 
@@ -75,6 +76,10 @@ rm -rf $SYSDIR/priv-app/LiveTv/
 echo "Remove Unwanted services"
 rm -f $SYSDIR/bin/netaccess
 rm -f $SYSDIR/bin/depconfig
+rm -rf $SYSDIR/app/AppInstaller
+
+echo "Remove Album"
+rm -rf $SYSDIR/priv-app/Gallery2/Gallery2.apk
 
 echo "Bootanimation"
 pushd kitchen/bootanimation
@@ -107,5 +112,5 @@ if which resize2fs &> /dev/null; then
 	resize2fs -M $SYSIMG
 fi
 
-echo "Done, press any button (on the keyboard, not power button) to close."
-read -n 1
+#echo "Done, press any button (on the keyboard, not power button) to close."
+#read -n 1

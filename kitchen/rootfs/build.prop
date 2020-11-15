@@ -17,9 +17,9 @@ ro.build.user=Manssizz
 ro.build.host=Cendrawasih-Project
 ro.build.tags=test-keys
 ro.build.flavor=kvim_userdebug
-ro.product.model=CendrawasihTV
+ro.product.model=Pixel 3a
 ro.product.brand=ZTE
-ro.product.name=B860H
+ro.product.name=CendrawasihTV
 ro.product.device=B860Hv1
 ro.product.board=gxl_p212
 # ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
@@ -29,7 +29,8 @@ ro.product.cpu.abi2=armeabi
 ro.product.cpu.abilist=armeabi-v7a,armeabi
 ro.product.cpu.abilist32=armeabi-v7a,armeabi
 ro.product.cpu.abilist64=
-ro.product.manufacturer=ZTE
+#ro.product.manufacturer=ZTE
+ro.product.manufacturer=Google
 ro.product.locale=en-ID
 ro.wifi.channels=11
 ro.board.platform=gxl
@@ -168,7 +169,8 @@ media.video.screenmode=true
 persist.daemonsu.enable=true
 
 #4k YouTube + Others
-sys.display-size=3840x2160
+#sys.display-size=3840x2160
+sys.display-size=1280x720
 sys.display-size.check=false
 
 #adb
@@ -178,7 +180,8 @@ persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb
 
 #Netflix
-ro.nrdp.modelgroup=XIAOMIM12TRIAL
+#ro.nrdp.modelgroup=XIAOMIM12TRIAL
+
 #vidon xbmc
 ro.vidon.platform=sunchip
 persist.sys.app.rotation=force_land

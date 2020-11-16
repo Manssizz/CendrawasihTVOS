@@ -88,10 +88,10 @@ pushd kitchen/bootanimation
 sudo zip -0 -r '../rootfs/media/bootanimation.zip' *
 popd
 
-echo "Coying default data"
-[ -d kitchen/rootfs/data_default ] || mkdir -p kitchen/rootfs/data_default/data
+#echo "Coying default data"
+#[ -d kitchen/rootfs/data_default ] || mkdir -p kitchen/rootfs/data_default/data
 # Fix data permissions, its changed after checkout from git
-chmod -R og+rw kitchen/rootfs/data_default/data/*
+#chmod -R og+rw kitchen/rootfs/data_default/data/*
 chmod -R +x kitchen/rootfs/xbin/*
 chmod -R +x kitchen/rootfs/bin/*
 
@@ -103,7 +103,7 @@ umount $SYSDIR
 
 if which e2fsck &> /dev/null; then
 	echo "Check/repair file system.img"
-	e2fsck -f $SYSIMG
+	e2fsck -f $SYSIMG -y
 fi
 
 if which resize2fs &> /dev/null; then

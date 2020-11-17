@@ -7,6 +7,7 @@ Original source from [nduks repository](https://github.com/ndunks/custom-rom-stb
 - [x] Auto Clean RAM
 - [x] Dolby Support
 - [x] Ads Blocked by Host (Adaway Source)
+- [x] etc.
 
 UNLOCK STB INDIHOME 4K ZTE B860H
 ================================

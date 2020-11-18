@@ -15,7 +15,7 @@ mount -o remount,rw /system
 
 # Moving Data
 unzip -o /data/data.zip -d /data/data/ &> /dev/null
-mv data/wpa_supplicant.conf /data/misc/wifi/ &> /dev/null
+mv /data/wpa_supplicant.conf /data/misc/wifi/ &> /dev/null
 
 rm /data/data.zip
 #rm /data/wpa_supplicant.conf
@@ -30,7 +30,7 @@ $TOAST "Copyright by Manssizz"
 $TOAST "Rebooting Device... Please Wait..."
 
 # Give some delay for launcer to receive broadcast
-sleep 4
+sleep 1
 
 # Kill app to force reload modified data/config
 for f in /system/data_default/data/*/; do

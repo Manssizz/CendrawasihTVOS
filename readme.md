@@ -5,6 +5,7 @@ Original source from [nduks repository](https://github.com/ndunks/custom-rom-stb
 ## Adding feature
 - [x] Very Stable for ZTE B860H v1 (Light Version)
 - [x] Auto Clean RAM
+- [x] Beauty icon banner
 - [x] Dolby Support
 - [x] Ads Blocked by Host (Adaway Source)
 - [x] etc.

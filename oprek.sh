@@ -88,7 +88,7 @@ pushd kitchen/bootanimation
 sudo zip -0 -r '../rootfs/media/bootanimation.zip' *
 popd
 
-#echo "Coying default data"
+echo "Coying default data"
 #[ -d kitchen/rootfs/data_default ] || mkdir -p kitchen/rootfs/data_default/data
 # Fix data permissions, its changed after checkout from git
 #chmod -R og+rw kitchen/rootfs/data_default/data/*

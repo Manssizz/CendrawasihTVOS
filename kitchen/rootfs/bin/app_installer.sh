@@ -38,5 +38,4 @@ for f in /system/data_default/data/*/; do
 done
 
 sleep 1
-
 reboot

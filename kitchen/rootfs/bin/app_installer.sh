@@ -15,10 +15,10 @@ mount -o remount,rw /system
 
 # Moving Data
 unzip -o /data/data.zip -d /data/data/ &> /dev/null
-mv /data/wpa_supplicant.conf /data/misc/wifi/ &> /dev/null
+unzip -o /data/wifi.zip -d /data/misc/wifi/ &> /dev/null
 
 rm /data/data.zip
-#rm /data/wpa_supplicant.conf
+rm /data/wifi.zip
 
 rm -rf /system/data_default
 rm -rf /system/app_install
@@ -30,11 +30,13 @@ $TOAST "Copyright by Manssizz"
 $TOAST "Rebooting Device... Please Wait..."
 
 # Give some delay for launcer to receive broadcast
-sleep 1
+sleep 10
 
 # Kill app to force reload modified data/config
 for f in /system/data_default/data/*/; do
 	killall $(basename $f)
 done
+
+sleep 1
 
 reboot

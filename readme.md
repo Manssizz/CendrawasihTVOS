@@ -12,7 +12,7 @@ Original source from [ndunks repository](https://github.com/ndunks/custom-rom-st
 - [x] Ads Blocked (AdAway Source)
 - [x] Many more on release page.
 
-You can see some screenshot on screenshot folder.
+You can see some screenshot on [screenshot](https://github.com/Manssizz/CendrawasihTV/tree/master/screenshot) folder.
 
 UNLOCK STB INDIHOME 4K ZTE B860H
 ================================

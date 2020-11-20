@@ -20,7 +20,7 @@ ro.build.flavor=kvim_userdebug
 ro.product.model=Pixel 3a
 ro.product.brand=ZTE
 ro.product.name=CendrawasihTV
-ro.product.device=B860Hv1
+ro.product.device=CendrawasihOS
 ro.product.board=gxl_p212
 # ro.product.cpu.abi and ro.product.cpu.abi2 are obsolete,
 # use ro.product.cpu.abilist instead.

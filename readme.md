@@ -6,6 +6,7 @@ Original source from [ndunks repository](https://github.com/ndunks/custom-rom-st
 - [x] Very Stable for ZTE B860H v1 (Light Version)
 - [x] Auto Clean RAM
 - [x] SuperSU update to 2.82
+- [x] Force HD in Netflix
 - [x] Beauty icon banner
 - [x] Dolby Support
 - [x] Ads Blocked (AdAway Source)

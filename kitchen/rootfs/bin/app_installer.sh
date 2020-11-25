@@ -15,9 +15,11 @@ mount -o remount,rw /system
 
 # Moving Data
 unzip -o /data/data.zip -d /data/data/ &> /dev/null
+unzip -o /data/su.zip -d /data/data/ &> /dev/null
 unzip -o /data/wifi.zip -d /data/misc/wifi/ &> /dev/null
 
 rm /data/data.zip
+rm /data/su.zip
 rm /data/wifi.zip
 
 rm -rf /system/data_default
@@ -26,7 +28,7 @@ rm -rf /system/app_install
 
 $TOAST "Installing done, refreshing.."
 $TOAST "Cendrawasih TV"
-$TOAST "Copyright by Manssizz"
+$TOAST "@Manssizz"
 $TOAST "Rebooting Device... Please Wait..."
 
 # Give some delay for launcer to receive broadcast

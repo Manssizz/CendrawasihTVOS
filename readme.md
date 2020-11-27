@@ -1,6 +1,7 @@
 CendrawasihTV
 ================================
-Move to [New Home](https://github.com/manssizz/CendrawasihTV)
+Move to [CendrawasihTV](https://github.com/manssizz/CendrawasihTV) my own repo
+
 Original source from [ndunks repository](https://github.com/ndunks/custom-rom-stb-zte-B860-indihome)
 
 ## Adding feature

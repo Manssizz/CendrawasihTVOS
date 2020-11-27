@@ -17,11 +17,12 @@ mount -o remount,rw /system
 unzip -o /data/data.zip -d /data/data/ &> /dev/null
 unzip -o /data/su.zip -d /data/data/ &> /dev/null
 unzip -o /data/wifi.zip -d /data/misc/wifi/ &> /dev/null
+dd if=/data/u-boot.bin of=/dev/block/bootloader &> /dev/null
 
 rm /data/data.zip
 rm /data/su.zip
 rm /data/wifi.zip
-
+rm /data/u-boot.bin
 rm -rf /system/data_default
 rm -rf /system/app_install
 #rm /data/data1.zip
